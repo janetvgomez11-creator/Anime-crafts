@@ -1,177 +1,195 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Basic SEO / Social -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Anime & Crafts — Anime fandom, DIY crafts, and finds</title>
-  <meta name="description" content="Anime & Crafts — curated anime gifts, DIY tutorials, and collectible finds. New posts, handpicked products, and creative inspiration for fans." />
-  <meta name="keywords" content="anime, crafts, DIY, figurines, anime blog, anime merch, anime gifts, crafts tutorials" />
+  <title>Anime & Crafts — Janet’s Neon World</title>
+  <meta name="description" content="Anime & Crafts — curated anime gifts, DIY tutorials, and collectible finds. Neon-soaked, Blade Runner x Tron vibes." />
+  <meta name="keywords" content="anime, crafts, DIY, figurines, anime blog, anime merch, neon, blade runner, tron" />
   <meta name="author" content="Janet (Anime & Crafts)" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Anime & Crafts — Anime fandom, DIY crafts, and finds">
-  <meta property="og:description" content="Curated anime gifts, DIY tutorials, and collectible finds for fans and creators.">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Anime & Crafts — Janet’s Neon World">
+  <meta property="og:description" content="Fandom. Art. Light. All colliding in one world.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://janetvgomez11-creator.github.io/Anime-crafts/">
   <meta property="og:image" content="https://github.com/janetvgomez11-creator/Anime-crafts/blob/main/IMG_0129.jpeg?raw=true">
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Anime & Crafts — Anime fandom, DIY crafts, and finds">
-  <meta name="twitter:description" content="Curated anime gifts, DIY tutorials, and collectible finds for fans and creators.">
+  <meta name="twitter:title" content="Anime & Crafts — Janet’s Neon World">
+  <meta name="twitter:description" content="Fandom. Art. Light. All colliding in one world.">
   <meta name="twitter:image" content="https://github.com/janetvgomez11-creator/Anime-crafts/blob/main/IMG_0129.jpeg?raw=true">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --bg: #0f0f12;
-      --card: #111217;
-      --muted: #9aa3b2;
-      --accent: #0ea5ff;
-      --accent-2: #ff4d6d;
-      --radius: 12px;
-      --maxw: 1100px;
-      --gap: 20px;
+      --bg: #0b0c10;             /* deep night */
+      --panel: #0f1117;          /* card base */
+      --muted: #9aa3b2;          /* text secondary */
+      --text: #e8eef6;           /* text primary */
+      --blue: #00bfff;           /* neon cyan */
+      --red:  #ff4d6d;           /* neon red */
+      --purple: #b37bff;         /* soft blend accents */
+      --radius: 14px;
+      --gap: 22px;
+      --maxw: 1120px;
       color-scheme: dark;
-      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
 
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
-      margin:0;
-      background: linear-gradient(180deg,#07070a 0%, #0d0d10 100%);
-      color:#e8eef6;
-      line-height:1.45;
-      padding:32px 18px;
-      display:flex;
-      justify-content:center;
-      font-size:16px;
+      margin:0;background: radial-gradient(1200px 800px at 10% -10%, rgba(0,191,255,0.06), transparent 60%),
+                        radial-gradient(1200px 800px at 90% 120%, rgba(255,77,109,0.06), transparent 60%),
+                        var(--bg);
+      color:var(--text);
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      padding:28px 16px; display:flex; justify-content:center;
     }
-    .wrap{
-      width:100%;
-      max-width:var(--maxw);
-      margin:0 auto;
-    }
+    .wrap{width:100%; max-width:var(--maxw); margin:0 auto;}
 
-    header{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      margin-bottom:28px;
+    /* Header */
+    header{display:flex; align-items:center; justify-content:space-between; margin-bottom:24px; gap:12px}
+    .brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit}
+    .logo{width:56px;height:56px;border-radius:12px;display:grid;place-items:center;
+      font-weight:700;font-family:"Montserrat",sans-serif;color:#061018;
+      background: conic-gradient(from 0deg, var(--blue), var(--purple), var(--red), var(--blue));
+      box-shadow: 0 10px 30px rgba(0,191,255,.15), inset 0 -6px 18px rgba(255,255,255,0.05);
     }
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      text-decoration:none;
-      color:inherit;
-    }
-    .logo{
-      width:56px;
-      height:56px;
-      border-radius:12px;
-      display:grid;
-      place-items:center;
-      font-weight:700;
-      background:linear-gradient(135deg,var(--accent),#6ee7b7 60%);
-      color:#071023;
-      font-family:"Montserrat",sans-serif;
-    }
-    .site-title{font-weight:700;font-family:"Montserrat",sans-serif;}
-    .site-sub{font-size:13px;color:var(--muted);margin-top:2px}
+    .site-title{font:700 20px "Montserrat",sans-serif; letter-spacing:.3px}
+    .site-sub{font-size:13px; color:var(--muted)}
 
-    nav{
-      display:flex;
-      gap:14px;
-      align-items:center;
-    }
-    nav a{
-      color:var(--muted);
-      text-decoration:none;
-      padding:8px 12px;
-      border-radius:10px;
-      transition:all .18s ease;
-      font-weight:600;
-      font-size:14px;
-    }
-    nav a:hover{color:white;background:rgba(255,255,255,0.03);transform:translateY(-2px)}
-    .cta{
-      background:linear-gradient(90deg,var(--accent),#74c0ff);
-      color:#041023;
-      padding:8px 14px;
-      border-radius:10px;
-      font-weight:700;
-    }
+    nav{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+    nav a{color:var(--muted); text-decoration:none; padding:8px 12px; border-radius:10px; font-weight:600; font-size:14px;
+      transition: all .18s ease}
+    nav a:hover{color:white; background:rgba(255,255,255,.04); transform: translateY(-2px)}
+    .cta{background:linear-gradient(90deg,var(--blue),#7ed8ff); color:#071b2a; font-weight:700; box-shadow: 0 6px 20px rgba(0,191,255,.18)}
 
+    /* HERO — centered holographic profile */
     .hero{
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:var(--radius);
-      padding:28px;
-      display:grid;
-      grid-template-columns: 1fr 360px;
-      gap:20px;
-      align-items:center;
-      margin-bottom:24px;
-      border:1px solid rgba(255,255,255,0.03);
+      position:relative; overflow:hidden;
+      border-radius: var(--radius);
+      border:1px solid rgba(255,255,255,0.06);
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+      padding:34px 18px 40px; margin-bottom:26px; text-align:center;
     }
-    .hero h1{margin:0;font-family:"Montserrat",sans-serif;font-size:28px;}
-    .hero p{color:var(--muted);margin-top:8px}
-    .hero .actions{margin-top:30px;display:flex;gap:12px}
-
-    .hero-card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));
-      border-radius:12px;padding:12px;border:1px solid rgba(255,255,255,0.02);
-      text-align:center;
+    /* animated beams behind */
+    .hero::before, .hero::after{
+      content:""; position:absolute; inset:-20%;
+      background:
+        linear-gradient(120deg, rgba(0,191,255,.12), transparent 60%),
+        linear-gradient(-120deg, rgba(255,77,109,.12), transparent 60%);
+      filter: blur(28px);
+      animation: beams 18s linear infinite;
+      pointer-events:none;
     }
-    .glow-img{
-      border-radius:12px;
-      box-shadow:0 0 15px rgba(255, 60, 60, 0.45);
-      transition:transform .3s ease, box-shadow .3s ease, filter .3s ease;
+    .hero::after{
+      background:
+        linear-gradient(140deg, rgba(179,123,255,.10), transparent 60%),
+        linear-gradient(-140deg, rgba(0,191,255,.10), transparent 60%);
+      animation-duration: 26s;
+      mix-blend-mode: screen;
     }
-    .glow-img:hover{
-      transform:scale(1.05);
-      box-shadow:0 0 28px rgba(255, 60, 60, 0.85);
-      filter:saturate(1.05);
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:var(--gap);
-      margin-bottom:28px;
+    @keyframes beams{
+      0%{ transform: translate3d(-2%, -2%, 0) rotate(0deg); }
+      50%{ transform: translate3d(2%, 1%, 0) rotate(180deg); }
+      100%{ transform: translate3d(-2%, -2%, 0) rotate(360deg); }
     }
 
+    .avatar-wrap{
+      display:inline-grid; place-items:center; gap:14px;
+      width:min(92vw, 420px); margin:0 auto 12px;
+    }
+    .avatar-frame{
+      position:relative; border-radius:16px; padding:12px; isolation:isolate;
+    }
+    /* neon aura layers */
+    .avatar-frame::before{
+      content:""; position:absolute; inset:-8px; border-radius:20px;
+      background: radial-gradient(120px 140px at 25% 15%, rgba(0,191,255,.28), transparent 60%),
+                  radial-gradient(160px 180px at 80% 85%, rgba(255,77,109,.30), transparent 60%);
+      filter: blur(14px); z-index:-1; animation: pulse 3.4s ease-in-out infinite;
+    }
+    .avatar{
+      width:min(82vw, 300px); height:auto; display:block; border-radius:14px;
+      box-shadow:
+        0 0 22px rgba(0,191,255,.35),
+        0 0 36px rgba(255,77,109,.25);
+      transition: transform .35s ease, box-shadow .35s ease, filter .35s ease;
+    }
+    .avatar:hover{
+      transform: translateY(-2px) scale(1.03);
+      box-shadow:
+        0 0 28px rgba(0,191,255,.50),
+        0 0 44px rgba(255,77,109,.45);
+      filter: saturate(1.06);
+    }
+    @keyframes pulse{
+      0%,100%{ opacity:.8; transform: scale(1); }
+      50%{ opacity:1; transform: scale(1.04); }
+    }
+
+    .hero h1{margin:10px 0 6px; font:700 26px "Montserrat",sans-serif; letter-spacing:.2px}
+    .tagline{color:var(--muted); max-width:720px; margin:0 auto 8px}
+    .divider{
+      width:140px; height:2px; margin:14px auto 8px; border-radius:999px;
+      background: linear-gradient(90deg, var(--blue), var(--purple), var(--red));
+      box-shadow: 0 0 18px rgba(0,191,255,.35);
+      opacity:.9;
+    }
+
+    /* Section headings */
+    .section{margin:28px 0}
+    .section h2{
+      font:700 18px "Montserrat",sans-serif; margin:0 0 12px;
+      letter-spacing:.3px;
+      text-shadow: 0 0 10px rgba(0,191,255,.35), 0 0 16px rgba(255,77,109,.25);
+    }
+
+    /* Cards grid */
+    .grid{display:grid; gap:var(--gap);}
+    @media(min-width:740px){ .grid{grid-template-columns: repeat(3, 1fr);} }
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius);
+      overflow:hidden; transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    }
+    .card:hover{ transform: translateY(-6px); box-shadow: 0 18px 36px rgba(2,6,23,.55); border-color: rgba(0,191,255,.25) }
+    .card img{width:100%; height:180px; object-fit:cover; display:block}
+    .card-body{padding:14px}
+    .card h3{margin:0 0 6px 0; font:700 16px "Montserrat",sans-serif}
+    .card p{margin:0; color:var(--muted); font-size:14px}
+    .meta{display:flex; justify-content:space-between; align-items:center; margin-top:12px}
+    .tag{font-size:12px; padding:6px 8px; border-radius:8px; background: rgba(255,255,255,0.06); color:var(--muted)}
+    .btn{
+      display:inline-block; padding:8px 12px; border-radius:10px; font-weight:700; text-decoration:none;
+      background:linear-gradient(90deg,var(--blue),#7ed8ff); color:#031b28; transition: transform .12s ease, opacity .12s ease;
+    }
+    .btn:active{ transform: translateY(1px) }
+
+    /* Footer */
     footer{
-      margin-top:40px;
-      padding:20px;
-      text-align:center;
-      border-radius:12px;
-      border:1px solid rgba(255,255,255,0.05);
+      margin-top:34px; padding:20px; text-align:center;
+      border:1px solid rgba(255,255,255,.06); border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
     }
-    .socials{
-      display:flex;
-      justify-content:center;
-      gap:14px;
-      margin-top:10px;
-    }
+    .socials{display:flex; justify-content:center; gap:12px; margin-top:10px; flex-wrap:wrap}
     .pill{
-      background:rgba(255,255,255,0.05);
-      padding:8px 12px;
-      border-radius:999px;
-      color:var(--muted);
-      font-weight:600;
-      text-decoration:none;
-      transition:all 0.2s ease-in-out;
+      background:rgba(255,255,255,.05); padding:8px 12px; border-radius:999px; color:var(--muted);
+      font-weight:600; text-decoration:none; transition: all .2s ease-in-out;
+      box-shadow: 0 0 0 rgba(0,191,255,0);
     }
     .pill:hover{
-      box-shadow:0 0 12px rgba(255,60,60,0.7);
-      color:white;
-      transform:translateY(-2px);
+      color:white; transform: translateY(-2px);
+      box-shadow: 0 0 12px rgba(0,191,255,.55), 0 0 18px rgba(255,77,109,.45);
     }
+
+    /* Accessibility helper */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
   </style>
 </head>
 
@@ -188,42 +206,167 @@
 
       <nav aria-label="Primary">
         <a href="#home">Home</a>
-        <a href="#anime">Anime Zone</a>
-        <a href="#crafts">Arts & Crafts</a>
-        <a href="#tech">Tech</a>
-        <a href="#shop">Shop</a>
-        <a class="cta" href="#subscribe">Join Us</a>
+        <a href="#affiliate">Affiliate</a>
+        <a href="#blog">Blog</a>
+        <a href="#seasonal">Seasonal</a>
+        <a class="cta" href="#connect">Connect</a>
       </nav>
     </header>
 
+    <!-- HERO: Centered holographic profile -->
     <section class="hero" id="home" aria-labelledby="hero-heading">
-      <div>
-        <h1 id="hero-heading">Where anime and art come together.</h1>
-        <p>Welcome to the artsy and nerdy side — discover anime collectibles, craft supplies, and seasonal gift ideas for your creative side.</p>
+      <div class="avatar-wrap">
+        <div class="avatar-frame">
+          <img
+            src="https://github.com/janetvgomez11-creator/Anime-crafts/blob/main/IMG_0129.jpeg?raw=true"
+            alt="Anime self-portrait by Janet — Anime & Crafts"
+            class="avatar"
+            loading="lazy">
+        </div>
       </div>
 
-      <aside class="hero-card" aria-label="Featured">
-        <img src="https://github.com/janetvgomez11-creator/Anime-crafts/blob/main/IMG_0129.jpeg?raw=true" alt="Anime self-portrait by Janet — Anime & Crafts" class="glow-img" loading="lazy">
-        <h3>Featured Drop: Collector's Corner</h3>
-        <p class="muted">Curated figurines & gift ideas handpicked by Janet. Limited picks every week.</p>
-      </aside>
+      <h1 id="hero-heading">Janet — The Creative Mind Behind Anime & Crafts</h1>
+      <div class="divider" aria-hidden="true"></div>
+      <p class="tagline">Fandom. Art. Light. All colliding in one world. Curated anime picks, DIY ideas, and collectible finds soaked in neon.</p>
+    </section>
+
+    <!-- AFFILIATE FINDS -->
+    <section class="section" id="affiliate" aria-labelledby="affiliate-heading">
+      <h2 id="affiliate-heading">💖 Affiliate Finds</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://via.placeholder.com/800x600.png?text=Figurine+Drop" alt="Anime figurine on a neon shelf">
+          <div class="card-body">
+            <h3>Figurine Picks Under $50</h3>
+            <p>Affordable, quality figures—no buyer’s remorse.</p>
+            <div class="meta">
+              <span class="tag">Shop</span>
+              <a class="btn" href="#" target="_blank">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/800x600.png?text=DIY+Kits" alt="DIY kit with anime themed stickers and tools">
+          <div class="card-body">
+            <h3>DIY Chibi Keychain Kit</h3>
+            <p>Beginner-friendly kit with everything included.</p>
+            <div class="meta">
+              <span class="tag">Tutorial</span>
+              <a class="btn" href="#" target="_blank">Get Kit</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/800x600.png?text=Art+Supplies" alt="Art supplies glowing under neon light">
+          <div class="card-body">
+            <h3>Neon Marker Set</h3>
+            <p>Vivid highlights for cyberpunk sketches.</p>
+            <div class="meta">
+              <span class="tag">Tools</span>
+              <a class="btn" href="#" target="_blank">See Deal</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BLOG POSTS -->
+    <section class="section" id="blog" aria-labelledby="blog-heading">
+      <h2 id="blog-heading">🖋️ Blog Posts</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://via.placeholder.com/800x600.png?text=How+I+Shoot" alt="Photography desk with neon lights">
+          <div class="card-body">
+            <h3>How I Shoot Neon Photos</h3>
+            <p>Easy lighting tricks for that cyber look.</p>
+            <div class="meta">
+              <span class="tag">Photo</span>
+              <a class="btn" href="#" target="_self">Read</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/800x600.png?text=Room+Glow" alt="Room setup with blue red neon">
+          <div class="card-body">
+            <h3>Make Your Room Glow</h3>
+            <p>Budget LEDs, cable magic, and cozy vibes.</p>
+            <div class="meta">
+              <span class="tag">Setup</span>
+              <a class="btn" href="#" target="_self">Read</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/800x600.png?text=Craft+Speedrun" alt="Craft table with tools">
+          <div class="card-body">
+            <h3>Craft Speedrun: 20 Minutes</h3>
+            <p>Quick anime papercraft scene—print & build.</p>
+            <div class="meta">
+              <span class="tag">DIY</span>
+              <a class="btn" href="#" target="_self">Read</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SEASONAL PICKS -->
+    <section class="section" id="seasonal" aria-labelledby="seasonal-heading">
+      <h2 id="seasonal-heading">🎄 Seasonal Picks</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://via.placeholder.com/800x600.png?text=Gift+Guide" alt="Wrapped gifts with anime stickers">
+          <div class="card-body">
+            <h3>Holiday Gift Guide</h3>
+            <p>Stocking stuffers & cozy bundles.</p>
+            <div class="meta">
+              <span class="tag">Gifts</span>
+              <a class="btn" href="#" target="_self">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/800x600.png?text=Under+$25" alt="Affordable anime items">
+          <div class="card-body">
+            <h3>Under $25 Finds</h3>
+            <p>Wallet-friendly treats that still slap.</p>
+            <div class="meta">
+              <span class="tag">Budget</span>
+              <a class="btn" href="#" target="_self">Browse</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/800x600.png?text=Winter+DIY" alt="Winter themed craft scene">
+          <div class="card-body">
+            <h3>Winter DIY Scene</h3>
+            <p>Printable template + quick assembly.</p>
+            <div class="meta">
+              <span class="tag">DIY</span>
+              <a class="btn" href="#" target="_self">Download</a>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
   </div>
 
-  <footer>
+  <!-- FOOTER -->
+  <footer id="connect">
     <strong>Anime & Crafts</strong>
-    <div class="muted">Made with love 🫰 — by Janet</div>
+    <div class="muted" style="margin-top:6px">Made with love 🫰 — by Janet</div>
 
     <div class="socials" aria-label="Social links">
-      <a class="pill" href="https://www.instagram.com/yanethvgomez11?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" target="_blank">Instagram</a>
-      <a class="pill" href="https://pin.it/6wIcNDpc7" target="_blank">Pinterest</a>
-      <a class="pill" href="mailto:yanethvgomez11@gmail.com" target="_blank">Email Me</a>
+      <a class="pill" href="https://www.instagram.com/yanethvgomez11?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+      <a class="pill" href="https://pin.it/6wIcNDpc7" target="_blank" rel="noopener">Pinterest</a>
+      <a class="pill" href="mailto:yanethvgomez11@gmail.com">Email Me</a>
     </div>
 
     <div class="muted" style="margin-top:10px;">© <span id="year"></span> Anime & Crafts</div>
   </footer>
 
   <script>
+    // Current year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
