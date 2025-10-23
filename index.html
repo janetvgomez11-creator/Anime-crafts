@@ -1,22 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Anime Crafts</title>
-
-  <style>
-    .glow-img {
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .glow-img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px rgba(255, 100, 200, 0.8);
-    }
-  </style>
-</head>
-  <!-- Basic SEO / Social -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Anime & Crafts — Anime fandom, DIY crafts, and finds</title>
@@ -29,12 +13,13 @@
   <meta property="og:description" content="Curated anime gifts, DIY tutorials, and collectible finds for fans and creators.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://janetvgomez11-creator.github.io/Anime-crafts/">
-  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Anime+%26+Crafts">
+  <meta property="og:image" content="https://github.com/janetvgomez11-creator/Anime-crafts/blob/main/IMG_0129.jpeg?raw=true">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Anime & Crafts — Anime fandom, DIY crafts, and finds">
   <meta name="twitter:description" content="Curated anime gifts, DIY tutorials, and collectible finds for fans and creators.">
+  <meta name="twitter:image" content="https://github.com/janetvgomez11-creator/Anime-crafts/blob/main/IMG_0129.jpeg?raw=true">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -44,8 +29,8 @@
       --bg: #0f0f12;
       --card: #111217;
       --muted: #9aa3b2;
-      --accent: #0ea5ff; /* electric blue — you like blue & red; this is readable and stylish */
-      --accent-2: #ff4d6d; /* secondary accent you can use sparingly */
+      --accent: #0ea5ff;
+      --accent-2: #ff4d6d;
       --radius: 12px;
       --maxw: 1100px;
       --gap: 20px;
@@ -53,15 +38,12 @@
       font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
 
-    /* Page layout */
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
       margin:0;
       background: linear-gradient(180deg,#07070a 0%, #0d0d10 100%);
       color:#e8eef6;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
       line-height:1.45;
       padding:32px 18px;
       display:flex;
@@ -74,7 +56,6 @@
       margin:0 auto;
     }
 
-    /* Header / Nav */
     header{
       display:flex;
       align-items:center;
@@ -98,7 +79,6 @@
       font-weight:700;
       background:linear-gradient(135deg,var(--accent),#6ee7b7 60%);
       color:#071023;
-      box-shadow: 0 6px 18px rgba(14,165,255,0.12), inset 0 -6px 18px rgba(255,255,255,0.02);
       font-family:"Montserrat",sans-serif;
     }
     .site-title{font-weight:700;font-family:"Montserrat",sans-serif;}
@@ -125,10 +105,8 @@
       padding:8px 14px;
       border-radius:10px;
       font-weight:700;
-      box-shadow:0 6px 18px rgba(14,165,255,0.12);
     }
 
-    /* Hero */
     .hero{
       background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
       border-radius:var(--radius);
@@ -140,84 +118,65 @@
       margin-bottom:24px;
       border:1px solid rgba(255,255,255,0.03);
     }
-    .hero h1{margin:0;font-family:"Montserrat",sans-serif;font-size:28px;letter-spacing:-0.3px}
+    .hero h1{margin:0;font-family:"Montserrat",sans-serif;font-size:28px;}
     .hero p{color:var(--muted);margin-top:8px}
     .hero .actions{margin-top:30px;display:flex;gap:12px}
-    .hero .search{
-      background:rgba(255,255,255,0.02);
-      border:1px solid rgba(255,255,255,0.03);
-      padding:10px 12px;
-      border-radius:10px;
-      color:var(--muted);
-      width:100%;
-      display:flex;
-      gap:8px;
-      align-items:center;
-    }
-    .hero .search input{
-      flex:1;background:transparent;border:0;color:inherit;outline:none;font-size:14px;
-    }
 
     .hero-card{
       background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));
       border-radius:12px;padding:12px;border:1px solid rgba(255,255,255,0.02);
       text-align:center;
     }
-    .hero-card img{width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:12px}
-    .hero-card h3{margin:4px 0;font-size:16px}
-    .hero-card p{color:var(--muted);font-size:13px;margin:0}
+    .glow-img{
+      border-radius:12px;
+      box-shadow:0 0 15px rgba(255, 60, 60, 0.45);
+      transition:transform .3s ease, box-shadow .3s ease, filter .3s ease;
+    }
+    .glow-img:hover{
+      transform:scale(1.05);
+      box-shadow:0 0 28px rgba(255, 60, 60, 0.85);
+      filter:saturate(1.05);
+    }
 
-    /* Grid / Cards */
     .grid{
       display:grid;
       grid-template-columns: repeat(3, 1fr);
       gap:var(--gap);
       margin-bottom:28px;
     }
-    @media (max-width:980px){ .hero{grid-template-columns:1fr} .grid{grid-template-columns:repeat(2,1fr)} }
-    @media (max-width:640px){ .grid{grid-template-columns:1fr} body{padding:20px} }
 
-    .card{
-      background:var(--card);
-      border-radius:12px;
-      overflow:hidden;
-      border:1px solid rgba(255,255,255,0.03);
-      transition:transform .22s ease, box-shadow .22s ease;
-    }
-    .card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(2,6,23,0.6)}
-    .card img{width:100%;height:190px;object-fit:cover;display:block}
-    .card-body{padding:14px}
-    .card h4{margin:0 0 6px 0;font-family:"Montserrat",sans-serif}
-    .card p{margin:0;color:var(--muted);font-size:14px}
-    .card .meta{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
-    .btn{
-      display:inline-block;padding:8px 12px;border-radius:10px;font-weight:700;text-decoration:none;
-      background:linear-gradient(90deg,var(--accent),#74c0ff);color:#031026;
-      transition:transform .12s ease,opacity .12s ease;
-    }
-    .btn.secondary{
-      background:transparent;color:var(--accent);border:1px solid rgba(255,255,255,0.03)
-    }
-    .btn:active{transform:translateY(1px)}
-    .muted{color:var(--muted);font-size:13px}
-
-    /* Footer */
     footer{
-      margin-top:10px;padding:18px;border-radius:12px;background:transparent;border:1px solid rgba(255,255,255,0.02);
-      display:flex;justify-content:space-between;align-items:center;gap:12px;
+      margin-top:40px;
+      padding:20px;
+      text-align:center;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.05);
     }
-    .socials{display:flex;gap:10px}
-    .pill{background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:999px;color:var(--muted);font-weight:600}
-
-    /* Tiny helpers */
-    .row{display:flex;gap:12px;align-items:center}
-    .tag{font-size:12px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.02);color:var(--muted);display:inline-block}
-
+    .socials{
+      display:flex;
+      justify-content:center;
+      gap:14px;
+      margin-top:10px;
+    }
+    .pill{
+      background:rgba(255,255,255,0.05);
+      padding:8px 12px;
+      border-radius:999px;
+      color:var(--muted);
+      font-weight:600;
+      text-decoration:none;
+      transition:all 0.2s ease-in-out;
+    }
+    .pill:hover{
+      box-shadow:0 0 12px rgba(255,60,60,0.7);
+      color:white;
+      transform:translateY(-2px);
+    }
   </style>
 </head>
+
 <body>
   <div class="wrap" role="main">
-
     <header>
       <a class="brand" href="/">
         <div class="logo" aria-hidden="true">AC</div>
@@ -237,73 +196,35 @@
       </nav>
     </header>
 
-    <!-- Hero -->
     <section class="hero" id="home" aria-labelledby="hero-heading">
       <div>
-        <h1 id="hero-heading">Where anime and art comes together.</h1>
-        <p>Welcome, to the artsy and nerdy side — discover anime must buy collectables,arts and crafts supplies you might need,or tech items you might want or just season gifts ideas for this christmas.</p>
-
-        <div class="actions" role="search" aria-label="Search the site">
-          <div class="search">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.35-4.35" stroke="#9aa3b2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="11" cy="11" r="6" stroke="#9aa3b2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <input placeholder="Search anime, tutorials, or merch..." aria-label="Search input" />
-            <a class="btn" href="#shop">Search</a>
-          </div>
-
-          <a class="btn secondary" href="#anime" title="Browse anime picks">Browse anime picks</a>
-        </div>
+        <h1 id="hero-heading">Where anime and art come together.</h1>
+        <p>Welcome to the artsy and nerdy side — discover anime collectibles, craft supplies, and seasonal gift ideas for your creative side.</p>
       </div>
 
       <aside class="hero-card" aria-label="Featured">
-        <img src="https://via.placeholder.com/600x400.png?text=Featured+Collection" alt="Featured anime collection on a shelf with figurines">
+        <img src="https://github.com/janetvgomez11-creator/Anime-crafts/blob/main/IMG_0129.jpeg?raw=true" alt="Anime self-portrait by Janet — Anime & Crafts" class="glow-img" loading="lazy">
         <h3>Featured Drop: Collector's Corner</h3>
         <p class="muted">Curated figurines & gift ideas handpicked by Janet. Limited picks every week.</p>
       </aside>
     </section>
+  </div>
 
-    <!-- Grid: featured posts / products -->
-    <section class="grid" aria-labelledby="featured-heading">
-      <h2 id="featured-heading" style="grid-column:1/-1; margin:0 0 8px 0; font-size:18px; font-family:'Montserrat',sans-serif;">Featured</h2>
+  <footer>
+    <strong>Anime & Crafts</strong>
+    <div class="muted">Made with love 🫰 — by Janet</div>
 
-      <!-- Card 1 -->
-      <article class="card" aria-labelledby="c1-title">
-        <img src="https://via.placeholder.com/800x600.png?text=DIY+Kits" alt="DIY craft kit with anime themed stickers and tools">
-        <div class="card-body">
-          <h4 id="c1-title">DIY Tutorials</h4>
-          <p class="muted">Easy steps by step— beginner friendly.</p>
-          <div class="meta">
-            <span class="tag">Tutorial</span>
-            <a class="btn" href="#crafts">Read</a>
-          </div>
-        </div>
-      </article>
+    <div class="socials" aria-label="Social links">
+      <a class="pill" href="https://www.instagram.com/yanethvgomez11?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+      <a class="pill" href="https://pin.it/6wIcNDpc7" target="_blank">Pinterest</a>
+      <a class="pill" href="mailto:yanethvgomez11@gmail.com" target="_blank">Email Me</a>
+    </div>
 
-      <!-- Card 2 -->
-      <article class="card">
-        <img src="https://via.placeholder.com/800x600.png?text=Figurines" alt="Anime figurines displayed on a shelf">
-        <div class="card-body">
-          <h4>Figurine Picks Under $50</h4>
-          <p class="muted">Affordable, quality figures for collectors who don’t want buyer's remorse.</p>
-          <div class="meta">
-            <span class="tag">Shop</span>
-            <a class="btn" href="#shop">Shop</a>
-          </div>
-        </div>
-      </article>
+    <div class="muted" style="margin-top:10px;">© <span id="year"></span> Anime & Crafts</div>
+  </footer>
 
-      <!-- Card 3 -->
-      <article class="card">
-        <img src="https://via.placeholder.com/800x600.png?text=Holiday+Gifts" alt="Gift box with anime stickers and craft supplies">
-        <div class="card-body">
-          <h4>Holiday Picks & Gift Guide</h4>
-          <p class="muted">Seasonal gifts, stocking stuffers, and special bundles for fans and creators.</p>
-          <div class="meta">
-            <span class="tag">Gift Guide</span>
-            <a class="btn" href="#shop">View</a>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <!-- Two-column section -->
-    <section style="display:grid; grid-template-columns:1fr 
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
